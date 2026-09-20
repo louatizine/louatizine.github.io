@@ -1,52 +1,50 @@
 "use client";
 
-import { Mail, MapPin, ArrowRight } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "@/components/BrandIcons";
-import { motion, itemVariants, staggerVariants, useReducedMotion } from "@/components/Motion";
+import { DemoRequestForm } from "@/components/DemoRequestForm";
+import { motion, itemVariants, staggerVariants } from "@/components/Motion";
 import { profile } from "@/data/profile";
 
 export function Contact() {
-  const reducedMotion = useReducedMotion();
-
   return (
     <section id="contact" className="bg-[var(--dark-section)] py-20 sm:py-28">
-      <div className="mx-auto max-w-4xl px-6 text-center lg:px-8">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <motion.div
           variants={staggerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {/* Main CTA */}
-          <motion.h2
-            variants={itemVariants}
-            className="font-heading text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
-          >
-            Let's work together on
-            <br />
-            your next project
-          </motion.h2>
+          <motion.div variants={itemVariants} className="text-center">
+            <h2 className="font-heading text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
+              Let&apos;s work together on
+              <br />
+              your next project
+            </h2>
 
-          <motion.p
-            variants={itemVariants}
-            className="mx-auto mt-6 max-w-2xl text-lg text-[var(--dark-section-muted)]"
-          >
-            Open to Full Stack and Data Engineering opportunities with ESNs and
-            enterprise teams. Prefer email for first contact.
-          </motion.p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg text-[var(--dark-section-muted)]">
+              Request a demo of one of my applications, or reach out about Full
+              Stack and Data Engineering opportunities. I&apos;ll follow up by
+              email — you can also book a meeting after you submit.
+            </p>
+          </motion.div>
 
-          <motion.a
+          <motion.div
             variants={itemVariants}
-            href={`mailto:${profile.email}?subject=Opportunity%20inquiry`}
-            whileHover={reducedMotion ? undefined : { scale: 1.05 }}
-            whileTap={reducedMotion ? undefined : { scale: 0.95 }}
-            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-[var(--accent)] px-8 py-4 font-heading text-lg font-semibold text-white shadow-xl transition-all hover:bg-[var(--accent-strong)]"
+            className="mx-auto mt-10 max-w-lg rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8"
           >
-            Get in Touch
-            <ArrowRight className="h-5 w-5" />
-          </motion.a>
+            <h3 className="font-heading text-lg font-semibold text-white">
+              Request a demo
+            </h3>
+            <p className="mt-1 text-sm text-[var(--dark-section-muted)]">
+              Share your name and email and I&apos;ll get back to you.
+            </p>
+            <div className="mt-6">
+              <DemoRequestForm variant="dark" />
+            </div>
+          </motion.div>
 
-          {/* Contact Details */}
           <motion.div
             variants={staggerVariants}
             className="mt-16 grid gap-6 text-left sm:grid-cols-2"

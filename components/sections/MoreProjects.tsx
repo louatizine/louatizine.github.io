@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { Calendar, ChevronDown } from "lucide-react";
 import { GitHubIcon } from "@/components/BrandIcons";
+import { DemoRequestModal } from "@/components/DemoRequestModal";
 import { secondaryProjects } from "@/data/projects";
 
 export function MoreProjects() {
   const [open, setOpen] = useState(false);
+  const [demoProject, setDemoProject] = useState<string | null>(null);
 
   return (
     <section className="bg-white pb-20 sm:pb-28">
@@ -53,20 +55,36 @@ export function MoreProjects() {
                     ))}
                   </div>
                 </div>
-                <a
-                  href={project.sourceCode}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex shrink-0 items-center gap-1.5 text-sm font-medium text-[var(--accent)] transition-colors hover:text-[var(--accent-strong)]"
-                >
-                  <GitHubIcon className="h-4 w-4" />
-                  Code
-                </a>
+                <div className="flex shrink-0 flex-wrap items-center gap-4">
+                  <button
+                    type="button"
+                    onClick={() => setDemoProject(project.title)}
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] transition-colors hover:text-[var(--accent-strong)]"
+                  >
+                    <Calendar className="h-4 w-4" />
+                    Request Demo
+                  </button>
+                  <a
+                    href={project.sourceCode}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] transition-colors hover:text-[var(--accent-strong)]"
+                  >
+                    <GitHubIcon className="h-4 w-4" />
+                    Code
+                  </a>
+                </div>
               </article>
             ))}
           </div>
         )}
       </div>
+
+      <DemoRequestModal
+        open={demoProject !== null}
+        projectTitle={demoProject ?? ""}
+        onClose={() => setDemoProject(null)}
+      />
     </section>
   );
 }

@@ -7,6 +7,7 @@ export const profile = {
   email: "zineeddinelouati.2000@gmail.com",
   linkedin: "https://www.linkedin.com/in/zine-louati/",
   github: "https://github.com/louatizine",
+  calendlyUrl: "https://calendly.com/YOUR_USERNAME",
   location: "Tunisia, open to relocation",
   title:
     "Full Stack Developer specializing in Data Engineering & AI/ML Integration",

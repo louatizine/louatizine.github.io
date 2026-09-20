@@ -1,13 +1,15 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { ExternalLink } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { GitHubIcon } from "@/components/BrandIcons";
-import { motion, itemVariants, staggerVariants, useReducedMotion } from "@/components/Motion";
+import { DemoRequestModal } from "@/components/DemoRequestModal";
+import { motion, itemVariants, staggerVariants } from "@/components/Motion";
 import { projects } from "@/data/projects";
 
 export function Projects() {
-  const reducedMotion = useReducedMotion();
+  const [demoProject, setDemoProject] = useState<string | null>(null);
 
   return (
     <section id="projects" className="bg-white py-20 sm:py-28">
@@ -38,7 +40,6 @@ export function Projects() {
                 variants={itemVariants}
                 className="card group overflow-hidden bg-white"
               >
-                {/* Image */}
                 <div className="relative aspect-video overflow-hidden bg-gray-100">
                   <Image
                     src={project.image}
@@ -49,7 +50,6 @@ export function Projects() {
                   />
                 </div>
 
-                {/* Content */}
                 <div className="p-6">
                   <h3 className="font-heading text-xl font-bold text-[var(--fg)]">
                     {project.title}
@@ -59,7 +59,6 @@ export function Projects() {
                     {project.problem}
                   </p>
 
-                  {/* Tech Stack */}
                   <div className="mt-4 flex flex-wrap gap-2">
                     {project.stack.slice(0, 3).map((tech) => (
                       <span
@@ -76,39 +75,39 @@ export function Projects() {
                     )}
                   </div>
 
-                  {/* Links */}
-                  {(project.liveDemo || project.sourceCode) && (
-                    <div className="mt-6 flex items-center gap-3 border-t border-gray-100 pt-4">
-                      {project.liveDemo && (
-                        <a
-                          href={project.liveDemo}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] transition-colors hover:text-[var(--accent-strong)]"
-                        >
-                          <ExternalLink className="h-4 w-4" />
-                          Demo
-                        </a>
-                      )}
-                      {project.sourceCode && (
-                        <a
-                          href={project.sourceCode}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] transition-colors hover:text-[var(--accent-strong)]"
-                        >
-                          <GitHubIcon className="h-4 w-4" />
-                          Code
-                        </a>
-                      )}
-                    </div>
-                  )}
+                  <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-gray-100 pt-4">
+                    <button
+                      type="button"
+                      onClick={() => setDemoProject(project.title)}
+                      className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] transition-colors hover:text-[var(--accent-strong)]"
+                    >
+                      <Calendar className="h-4 w-4" />
+                      Request Demo
+                    </button>
+                    {project.sourceCode && (
+                      <a
+                        href={project.sourceCode}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-sm font-medium text-[var(--accent)] transition-colors hover:text-[var(--accent-strong)]"
+                      >
+                        <GitHubIcon className="h-4 w-4" />
+                        Code
+                      </a>
+                    )}
+                  </div>
                 </div>
               </motion.article>
             ))}
           </motion.div>
         </motion.div>
       </div>
+
+      <DemoRequestModal
+        open={demoProject !== null}
+        projectTitle={demoProject ?? ""}
+        onClose={() => setDemoProject(null)}
+      />
     </section>
   );
 }
