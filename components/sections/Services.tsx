@@ -31,7 +31,7 @@ const services: Service[] = [
     title: "Full Stack Development",
     focus: "Products",
     description:
-      "Developing enterprise applications with .NET/C#, React, and Node.js. Experience with modular ERP systems, real-time applications, and document automation integrated with Microsoft Graph and SharePoint.",
+      "Developing enterprise applications with .NET/Blazor Clean Architecture, React, and Node.js. Experience with modular ERP systems, Azure AD authorization, real-time applications, and document automation via Microsoft Graph and SharePoint.",
   },
   {
     id: "ai-ml",

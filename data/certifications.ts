@@ -4,6 +4,7 @@ export type Certification = {
   code?: string;
   issuer: string;
   focus?: string;
+  inProgress?: boolean;
 };
 
 export const certifications: Certification[] = [
@@ -13,5 +14,6 @@ export const certifications: Certification[] = [
     code: "DP-203",
     issuer: "Microsoft",
     focus: "Data pipelines, storage, and security on Azure",
+    inProgress: true,
   },
 ];

@@ -75,10 +75,11 @@
 \begin{center}
     \textbf{\Huge \scshape Zine Eddine Louati} \\ \vspace{2pt}
     \small
-    Bizerte, Tunisie $|$ [Votre numéro] $|$ \href{mailto:votre.email@example.com}{votre.email@example.com} $|$
-    \href{https://linkedin.com/in/votre-profil}{LinkedIn} $|$
-    \href{https://github.com/votre-profil}{GitHub} $|$
-    \href{https://your-domain.com}{Portfolio} \\
+    Bizerte, Tunisie $|$
+    \href{mailto:zineeddinelouati.2000@gmail.com}{zineeddinelouati.2000@gmail.com} $|$
+    \href{https://www.linkedin.com/in/zine-louati/}{LinkedIn} $|$
+    \href{https://github.com/louatizine}{GitHub} $|$
+    \href{https://zayneddine.me}{Portfolio} \\
     \vspace{1pt}
     \textit{Développeur Full Stack spécialisé en Ingénierie des Données \& Intégration IA/ML}
     \\ \textit{\small Ouvert à la relocalisation en France}
@@ -87,7 +88,7 @@
 
 %-----------PROFIL-----------
 \section{Profil}
-\small{Développeur Full Stack disposant d'une solide base backend et API, se spécialisant progressivement dans l'ingénierie des données et les plateformes de données Azure. Expérience concrète dans la construction de pipelines ETL --- de l'automatisation de workflows (n8n/OCR) au traitement de flux en temps réel (Apache Kafka, Apache Spark) --- ainsi que dans les systèmes d'entreprise intégrant Azure AD, Microsoft Graph API et SharePoint. Actuellement en approfondissement des compétences Azure Data Engineering (Data Factory, Databricks, Synapse) en vue de la certification Microsoft DP-203.}
+\small{Développeur Full Stack disposant d'une solide base backend et API, se spécialisant progressivement dans l'ingénierie des données et les plateformes de données Azure. Expérience concrète dans la construction de systèmes d'entreprise en Clean Architecture (.NET/Blazor, Azure AD, Microsoft Graph, SharePoint), de pipelines ETL (n8n/OCR) et de traitement de flux en temps réel (Apache Kafka, Apache Spark). Actuellement en approfondissement des compétences Azure Data Engineering (Data Factory, Databricks, Synapse) en vue de la certification Microsoft DP-203.}
 
 
 %-----------EXPERIENCE-----------
@@ -98,9 +99,9 @@
       {Dynamix Services}{Bizerte, Tunisie}
       {Développeur Full Stack ERP}{Juin 2024 -- Présent}
       \resumeItemListStart
-        \resumeItem{Développement d'un système ERP modulaire pour la gestion RH, la flotte de véhicules et le suivi documentaire, au service de plus de 50 employés}
-        \resumeItem{Conception et exploitation d'un pipeline de données automatisé (n8n + OCR)~: extraction $\rightarrow$ transformation $\rightarrow$ stockage structuré, réduisant la saisie manuelle de 40\%}
-        \resumeItem{Développement d'API REST évolutives (Node.js) pour l'intégration système~; mise en place de l'authentification JWT avec contrôle d'accès basé sur les rôles (RBAC)}
+        \resumeItem{Architecture d'un Quality Portal modulaire en Clean Architecture (.NET/Blazor) pour la gestion multi-sites des certifications industrielles avec autorisation Azure AD basée sur les groupes}
+        \resumeItem{Intégration Microsoft Graph API et SharePoint pour le stockage automatique des documents de certification~; outbox transactionnel Wolverine avec EF Core pour des événements de domaine fiables}
+        \resumeItem{Pipeline de données n8n + OCR (extraction $\rightarrow$ transformation $\rightarrow$ stockage structuré), réduisant la saisie manuelle de 40\%~; JWT/RBAC sur les modules ERP servant plus de 50 utilisateurs}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -116,7 +117,7 @@
       {Digit Kakushin Soft}{Sfax, Tunisie}
       {Développeur Mobile (Stage)}{Fév. -- Juin 2023}
       \resumeItemListStart
-        \resumeItem{Développement d'une application mobile multiplateforme (Flutter) comptant plus de 100 utilisateurs actifs, avec notifications push (taux de livraison de 99\%)}
+        \resumeItem{Développement d'une application mobile de gestion des congés (Flutter) utilisée par plus de 100 employés, avec notifications push (taux de livraison de 99\%)}
         \resumeItem{Intégration du frontend mobile avec des services backend Spring Boot via API REST}
       \resumeItemListEnd
 
@@ -127,35 +128,36 @@
 \section{Projets Phares}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Pipeline Big Data Esport} $|$ \emph{Apache Kafka, Apache Spark, Docker, Python}}{}
+          {\textbf{Quality Portal --- Plateforme de Certification Entreprise} $|$ \emph{.NET, Blazor Server, EF Core, Wolverine, Azure AD}}{}
+          \resumeItemListStart
+            \resumeItem{Plateforme modulaire en Clean Architecture pour les certifications industrielles, utilisateurs et notifications multi-sites}
+            \resumeItem{Rôles Azure AD basés sur les groupes avec synchronisation live des permissions~; Microsoft Graph + SharePoint pour le stockage des certificats par usine}
+            \resumeItem{Outbox transactionnel Wolverine avec EF Core~; alertes d'expiration planifiées Hangfire et destinataires de notification configurables}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Plateforme de Gestion RH} $|$ \emph{React, Node.js, JWT, RBAC, n8n, OCR}}{}
+          \resumeItemListStart
+            \resumeItem{Plateforme d'entreprise multi-rôles~: cycle de vie employés, congés, flotte, licences et workflows collaboratifs pour plus de 50 utilisateurs}
+            \resumeItem{Pipeline OCR n8n (PDF/images $\rightarrow$ CSV $\rightarrow$ base de données) réduisant le traitement manuel de 40\%~; notifications temps réel et archive documentaire OCR}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Pipeline Big Data Esport} $|$ \emph{Apache Kafka, Apache Spark, Docker, Python, Streamlit}}{}
           \resumeItemListStart
             \resumeItem{Plateforme d'analyse de flux de type production pour les données esport, basée sur l'API Riot Games}
-            \resumeItem{Conception de l'ingestion et du traitement en temps réel avec Kafka et Spark Structured Streaming, tableaux de bord de supervision en direct, déploiement modulaire et conteneurisé}
+            \resumeItem{Ingestion et traitement en temps réel avec Kafka et Spark Structured Streaming~; supervision Streamlit~; déploiement Docker modulaire}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Plateforme de Gestion RH MLM} $|$ \emph{React, Node.js, n8n, OCR}}{}
+          {\textbf{Système de Pointage Biométrique} $|$ \emph{FastAPI, React, MongoDB, C\# SDK, Docker}}{}
           \resumeItemListStart
-            \resumeItem{Plateforme RH d'entreprise multi-applications couvrant le cycle de vie des employés, la gestion des congés et la présence}
-            \resumeItem{Pipelines de données OCR automatisés et support multilingue (FR/EN/AR)}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{AgriSmart -- Prédiction de Rendement Agricole par IA} $|$ \emph{XGBoost, ResNet18, FastAPI}}{}
-          \resumeItemListStart
-            \resumeItem{Modèles XGBoost pour la prédiction des cultures/engrais (98\% de précision, 22 classes de cultures)}
-            \resumeItem{CNN ResNet18 affiné pour la détection de maladies des plantes (99\% de précision, 38 classes de maladies)}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Plateforme d'Imagerie Médicale OCT par IA} $|$ \emph{TensorFlow/Keras, CNN, Flask}}{}
-          \resumeItemListStart
-            \resumeItem{Plateforme complète pour le dépistage assisté par IA des maladies rétiniennes~; CNN personnalisé atteignant 89\% de précision de validation}
-            \resumeItem{Pipeline d'inférence livrant des résultats en moins de 3 secondes}
+            \resumeItem{Système de présence full-stack avec matériel d'empreintes via SDK C\#~; synchronisation temps réel entre terminaux et base centrale}
+            \resumeItem{Tableau de bord analytique admin avec export CSV/Excel~; déploiement multi-services conteneurisé (React, FastAPI, service desktop C\#)}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
-    \small{\textit{Projets additionnels --- plateforme d'entreprise .NET/Azure, système de pointage biométrique, gestion des stocks en temps réel, applications mobiles --- disponibles sur le portfolio et GitHub.}}
+    \small{\textit{Projets additionnels --- AgriSmart prédiction de rendement IA, imagerie médicale OCT, gestion des stocks temps réel, app congés Flutter, Fintness --- disponibles sur le portfolio et GitHub.}}
 
 
 %-----------EDUCATION-----------
@@ -163,7 +165,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Iteam University}{Tunis, Tunisie}
-      {Génie Informatique --- Big Data \& Business Intelligence}{}
+      {Génie Informatique --- Big Data \& Business Intelligence}{Sept. 2023 -- Juin 2026}
       \resumeItemListStart
         \resumeItem{Frameworks de traitement Big Data~: Hadoop, Apache Spark, PySpark}
         \resumeItem{Outils de plateforme de données~: Databricks $\quad$ Supervision~: Grafana}
@@ -171,7 +173,7 @@
       \resumeItemListEnd
     \resumeSubheading
       {ISIMS}{Sfax, Tunisie}
-      {Licence en Sciences Informatiques et Multimédia}{}
+      {Licence en Sciences Informatiques et Multimédia}{Sept. 2020 -- Juin 2023}
   \resumeSubHeadingListEnd
 
 
@@ -180,10 +182,12 @@
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
      \textbf{Données \& Cloud}{: Apache Spark, PySpark, Hadoop, Databricks, Apache Kafka, Grafana, Azure Data Factory (Apprentissage), Azure Synapse (Apprentissage)} \\
-     \textbf{Bases de données}{: MongoDB, SQL Server, EF Core} \\
-     \textbf{Backend}{: Node.js/Express, FastAPI, Flask, Spring Boot, .NET} \\
+     \textbf{Entreprise \&.NET}{: .NET, Blazor Server, EF Core, Wolverine, Hangfire, Azure AD, Microsoft Graph API, SharePoint, Azure DevOps} \\
+     \textbf{Bases de données}{: MongoDB, SQL Server} \\
+     \textbf{Backend}{: Node.js/Express, FastAPI, Flask, Spring Boot} \\
+     \textbf{Frontend \& Mobile}{: React, React Native, Flutter, Blazor} \\
      \textbf{IA/ML}{: TensorFlow/Keras, PyTorch, XGBoost, CNN, ResNet18} \\
-     \textbf{DevOps \& Auth Cloud}{: Docker, CI/CD, Azure DevOps, Azure AD, Microsoft Graph API, JWT/RBAC}
+     \textbf{DevOps}{: Docker, CI/CD, GitHub Actions, JWT/RBAC}
     }}
  \end{itemize}
 

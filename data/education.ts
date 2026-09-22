@@ -29,7 +29,7 @@ export const education: EducationEntry[] = [
   {
     id: "isims",
     degree: "Bachelor's in Computer Science and Multimedia",
-    institution: "ISIMS Sfax",
+    institution: "ISIMS",
     period: "Sept 2020 – June 2023",
     summary:
       "Foundation in software, multimedia, and distributed systems — from JEE and cloud concepts to AI and Scrum.",

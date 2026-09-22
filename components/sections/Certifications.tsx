@@ -80,6 +80,11 @@ export function Certifications() {
                   )}
                   <h3 className="mt-1 font-heading text-lg font-bold text-[var(--fg)] sm:text-xl">
                     {cert.name}
+                    {cert.inProgress && (
+                      <span className="ml-2 align-middle text-sm font-semibold text-[var(--accent)]">
+                        In progress
+                      </span>
+                    )}
                   </h3>
                   <p className="mt-1 text-sm font-medium text-[var(--muted)]">
                     {cert.issuer}

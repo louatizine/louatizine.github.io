@@ -41,6 +41,29 @@ export const secondaryProjects: SecondaryProject[] = [
 
 export const projects: Project[] = [
   {
+    id: "quality-portal",
+    title: "Quality Portal",
+    problem:
+      "Industrial plants need a unified platform to manage certifications, users, and renewal notifications across multiple sites.",
+    architecture:
+      "Modular Clean Architecture on .NET with Blazor Server, EF Core, and Wolverine. Azure AD group-based authorization with live permission sync; Microsoft Graph API and SharePoint for per-plant certificate document storage; Hangfire for scheduled expiration alerts.",
+    role: "Full stack developer — architecture, auth, integrations, and CI/CD.",
+    outcome:
+      "Enterprise certification management with reliable domain events (transactional outbox), configurable per-plant alerts, and Azure DevOps delivery across a multi-developer team.",
+    stack: [
+      ".NET",
+      "Blazor Server",
+      "EF Core",
+      "Wolverine",
+      "Azure AD",
+      "SharePoint",
+      "Hangfire",
+    ],
+    image: "/projects/placeholder.svg",
+    dataFocus:
+      "Structured certification records, domain events via transactional outbox, and automated document storage workflows into SharePoint.",
+  },
+  {
     id: "esport-big-data-pipeline",
     title: "Esport Big Data Pipeline",
     problem:
@@ -50,25 +73,18 @@ export const projects: Project[] = [
     role: "Designed and built the pipeline architecture end-to-end.",
     outcome:
       "A modular, production-ready streaming analytics platform with live monitoring dashboards built in Streamlit.",
-    stack: ["Apache Kafka", "Apache Spark", "Docker", "Python", "Streamlit", "Riot Games API"],
-    image: "/projects/placeholder.svg",
+    stack: [
+      "Apache Kafka",
+      "Apache Spark",
+      "Docker",
+      "Python",
+      "Streamlit",
+      "Riot Games API",
+    ],
+    image: "/projects/bigData.png",
+    sourceCode: "https://github.com/louatizine/esport-bigdata-pipeline",
     dataFocus:
       "Real-time stream ingestion, distributed processing, and event-driven architecture — direct hands-on Kafka and Spark experience.",
-  },
-  {
-    id: "fintness",
-    title: "Fintness",
-    problem:
-      "People tracking workouts need a simple, fast mobile logging tool.",
-    architecture:
-      "Built with Expo, React Native, and TypeScript. Typed data models, centralized authentication and data-sync services, with a local write queue and planned MongoDB Atlas cloud sync.",
-    role: "Mobile developer, full architecture.",
-    outcome:
-      "Functional workout tracker with tabbed navigation (Today, History, Progress, Settings), rep/weight tracking, and a rest timer.",
-    stack: ["React Native", "TypeScript", "Expo", "MongoDB"],
-    image: "/projects/FITNESS.jpg",
-    sourceCode: "https://github.com/louatizine/fintness",
-    dataFocus: "Local-first data sync architecture, typed data modeling.",
   },
   {
     id: "hr-platform",
@@ -76,48 +92,15 @@ export const projects: Project[] = [
     problem:
       "Organizations need a unified system to manage the full employee lifecycle and daily HR operations across multiple functions.",
     architecture:
-      "Multi-app platform covering employee management, leave management, salary advances, attendance tracking, and role-based notifications, with multi-language support (English, French, Arabic).",
+      "Multi-app platform covering employee management, leave, fleet, software licenses, and collaborative task workflows, with JWT/RBAC, n8n OCR invoice automation, and multi-language support (English, French, Arabic).",
     role: "Full stack development and pipeline automation design.",
     outcome:
-      "A comprehensive, production-used HR platform handling multiple operational domains in one system.",
-    stack: ["JavaScript", "Python", "React", "Docker", "i18n"],
+      "Production-used HR platform serving 50+ users; OCR invoice pipeline reduced manual processing by 40%.",
+    stack: ["React", "Node.js", "JWT", "RBAC", "n8n", "OCR", "Docker"],
     image: "/projects/hr-platform.png",
     sourceCode: "https://github.com/louatizine/erp",
     dataFocus:
-      "Structured employee data across modules, role-based workflow automation, synced request workflows.",
-  },
-  {
-    id: "oct-imaging",
-    title: "AI-Based OCT Medical Imaging Platform",
-    problem:
-      "Clinical OCT image review required faster, consistent screening support without replacing specialist judgment.",
-    architecture:
-      "Custom CNN for OCT classification with a Flask inference service serving predictions to the application layer.",
-    role: "Model development and inference pipeline integration.",
-    outcome:
-      "89% validation accuracy; inference responses delivered in under 3 seconds.",
-    stack: ["Python", "CNN", "TensorFlow/Keras", "Flask"],
-    image: "/projects/OCT.jpg",
-    sourceCode:
-      "https://github.com/louatizine/machineLearning-Human-Eye-Disease-Prediction-System",
-    dataFocus:
-      "Image preprocessing, model training/validation pipeline, and low-latency inference serving.",
-  },
-  {
-    id: "agrismart",
-    title: "AgriSmart AI Yield Prediction",
-    problem:
-      "Agricultural decision support needed reliable crop yield estimation and disease classification across many plant types.",
-    architecture:
-      "XGBoost models for yield prediction across crop classes; ResNet18 for disease classification; integrated prediction services for field use.",
-    role: "ML model development and evaluation across crop and disease datasets.",
-    outcome:
-      "XGBoost reached 98% accuracy across 22 crop classes; ResNet18 reached 99% accuracy across 38 disease classes.",
-    stack: ["XGBoost", "PyTorch", "ResNet18", "Python"],
-    image: "/projects/AGRIS.jpg",
-    sourceCode: "https://github.com/louatizine/yield_Prediction_Sys",
-    dataFocus:
-      "Feature engineering for tabular yield data and image-based disease classification pipelines.",
+      "Structured employee data across modules, OCR extraction to structured storage, and role-based workflow automation.",
   },
   {
     id: "biometric",
@@ -136,15 +119,64 @@ export const projects: Project[] = [
       "Real-time event data sync between hardware terminals and the central database, JWT-secured API layer.",
   },
   {
+    id: "oct-imaging",
+    title: "AI-Based OCT Medical Imaging Platform",
+    problem:
+      "Clinical OCT image review required faster, consistent screening support without replacing specialist judgment.",
+    architecture:
+      "Custom CNN for OCT classification with a Flask inference service and React frontend for upload, confidence visualization, and PDF report export.",
+    role: "Full stack developer and ML engineer — model development and inference pipeline.",
+    outcome:
+      "89% validation accuracy detecting CNV, DME, Drusen, and Normal retina; inference under 3 seconds per scan.",
+    stack: ["React", "Flask", "TensorFlow/Keras", "MongoDB", "CNN"],
+    image: "/projects/OCT.jpg",
+    sourceCode:
+      "https://github.com/louatizine/machineLearning-Human-Eye-Disease-Prediction-System",
+    dataFocus:
+      "Image preprocessing, model training/validation pipeline, and low-latency inference serving.",
+  },
+  {
+    id: "agrismart",
+    title: "AgriSmart AI Yield Prediction",
+    problem:
+      "Agricultural decision support needed reliable crop yield estimation and disease classification across many plant types.",
+    architecture:
+      "XGBoost models for crop/fertilizer prediction; ResNet18 for disease classification; FastAPI backend with JWT and MongoDB; React dashboard for KPIs and live insights.",
+    role: "Full stack developer and ML engineer — models, API, and dashboard.",
+    outcome:
+      "XGBoost reached 98% accuracy across 22 crop classes; ResNet18 reached 99% accuracy across 38 disease classes.",
+    stack: ["React", "FastAPI", "XGBoost", "ResNet18", "MongoDB", "PyTorch"],
+    image: "/projects/AGRIS.jpg",
+    sourceCode: "https://github.com/louatizine/yield_Prediction_Sys",
+    dataFocus:
+      "Feature engineering for tabular yield data and image-based disease classification pipelines.",
+  },
+  {
+    id: "fintness",
+    title: "Fintness",
+    problem:
+      "People tracking workouts need a simple, fast mobile logging tool.",
+    architecture:
+      "Built with Expo, React Native, and TypeScript. Typed data models, centralized authentication and data-sync services, with a local write queue and planned MongoDB Atlas cloud sync.",
+    role: "Mobile developer, full architecture.",
+    outcome:
+      "Functional workout tracker with tabbed navigation (Today, History, Progress, Settings), rep/weight tracking, and a rest timer.",
+    stack: ["React Native", "TypeScript", "Expo", "MongoDB"],
+    image: "/projects/FITNESS.jpg",
+    sourceCode: "https://github.com/louatizine/fintness",
+    dataFocus: "Local-first data sync architecture, typed data modeling.",
+  },
+  {
     id: "inventory",
     title: "Real-Time Inventory System",
     problem:
       "Inventory views lagged behind physical stock movements, limiting operational responsiveness.",
     architecture:
-      "WebSocket-based real-time updates over a secure API backend, deployed with Docker.",
+      "WebSocket-based real-time updates over a secure Node.js/React API backend, deployed with Docker.",
     role: "Full stack development of live inventory flows.",
-    outcome: "Reduced update latency for inventory state across connected clients.",
-    stack: ["WebSockets", "REST APIs", "Docker"],
+    outcome:
+      "Reduced update latency from ~5 seconds to near-instantaneous stock updates across connected clients.",
+    stack: ["Node.js", "React", "WebSockets", "Docker"],
     image: "/projects/INVEN.jpg",
     dataFocus:
       "Streaming inventory state changes and consistent client-side data refresh.",

@@ -15,12 +15,12 @@ import { skillCategories } from "@/data/skills";
 
 const categoryIcons: Record<string, LucideIcon> = {
   "data-cloud": Cloud,
+  "enterprise-dotnet": Shield,
   databases: Database,
   backend: Server,
   frontend: Layout,
   "ai-ml": Cpu,
   devops: GitBranch,
-  "auth-enterprise": Shield,
 };
 
 const cardVariants = {

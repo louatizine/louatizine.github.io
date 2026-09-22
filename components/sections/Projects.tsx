@@ -25,8 +25,8 @@ export function Projects() {
               Featured <span className="text-[var(--accent)]">Projects</span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-lg text-[var(--muted)]">
-              Selected work demonstrating full-stack development, data engineering,
-              and enterprise system integration
+              Selected work across Clean Architecture enterprise platforms, data
+              engineering, and AI/ML systems
             </p>
           </motion.div>
 

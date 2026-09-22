@@ -17,8 +17,8 @@ export const profile = {
   ],
   about: [
     "Full stack developer with a strong backend and API foundation, progressively specializing in data engineering and Azure-based data platforms.",
-    "Experience delivering modular enterprise systems ERP modules, real-time applications, and document automation has shaped a practical understanding of how operational data is produced, transformed, and consumed.",
-    "Work with Azure AD, Microsoft Graph API, and SharePoint in enterprise contexts provides a natural bridge into the broader Azure data ecosystem (Data Factory, Databricks, Synapse).",
+    "Built enterprise systems with Clean Architecture — notably a .NET/Blazor Quality Portal with Azure AD, Microsoft Graph, and SharePoint — alongside ERP modules, real-time apps, and OCR document automation.",
+    "Hands-on Azure AD, Microsoft Graph API, and SharePoint work provides a natural bridge into the broader Azure data ecosystem (Data Factory, Databricks, Synapse).",
     "Currently deepening Azure data engineering skills and pursuing the DP-203 Data Engineer Associate certification.",
   ],
   cvPath: "/cv.pdf",
