@@ -22,7 +22,7 @@ export function Hero() {
   const reducedMotion = useReducedMotion();
 
   // Calculate real stats from data
-  const yearsExperience = new Date().getFullYear() - 2021; // Adjust based on earliest role
+  const yearsExperience = new Date().getFullYear() - 2024; // Adjust based on earliest role
   const projectsCount = projects.length;
   const techCount = Array.from(
     new Set(experience.flatMap((role) => role.tech))
