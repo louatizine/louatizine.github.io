@@ -1,0 +1,198 @@
+%-------------------------
+% CV — Zine Eddine Louati
+% Based on "Jake's Resume" — the most widely used ATS-friendly LaTeX
+% resume template (single column, plain pdfLaTeX, no icons/graphics).
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english,french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ATS parsing fix: make ligatures searchable as plain text, not glyphs
+\pdfgentounicode=1
+
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in,itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{1pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Zine Eddine Louati} \\ \vspace{2pt}
+    \small
+    Bizerte, Tunisie $|$ [Votre numéro] $|$ \href{mailto:votre.email@example.com}{votre.email@example.com} $|$
+    \href{https://linkedin.com/in/votre-profil}{LinkedIn} $|$
+    \href{https://github.com/votre-profil}{GitHub} $|$
+    \href{https://your-domain.com}{Portfolio} \\
+    \vspace{1pt}
+    \textit{Développeur Full Stack spécialisé en Ingénierie des Données \& Intégration IA/ML}
+    \\ \textit{\small Ouvert à la relocalisation en France}
+\end{center}
+
+
+%-----------PROFIL-----------
+\section{Profil}
+\small{Développeur Full Stack disposant d'une solide base backend et API, se spécialisant progressivement dans l'ingénierie des données et les plateformes de données Azure. Expérience concrète dans la construction de pipelines ETL --- de l'automatisation de workflows (n8n/OCR) au traitement de flux en temps réel (Apache Kafka, Apache Spark) --- ainsi que dans les systèmes d'entreprise intégrant Azure AD, Microsoft Graph API et SharePoint. Actuellement en approfondissement des compétences Azure Data Engineering (Data Factory, Databricks, Synapse) en vue de la certification Microsoft DP-203.}
+
+
+%-----------EXPERIENCE-----------
+\section{Expérience Professionnelle}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dynamix Services}{Bizerte, Tunisie}
+      {Développeur Full Stack ERP}{Juin 2024 -- Présent}
+      \resumeItemListStart
+        \resumeItem{Développement d'un système ERP modulaire pour la gestion RH, la flotte de véhicules et le suivi documentaire, au service de plus de 50 employés}
+        \resumeItem{Conception et exploitation d'un pipeline de données automatisé (n8n + OCR)~: extraction $\rightarrow$ transformation $\rightarrow$ stockage structuré, réduisant la saisie manuelle de 40\%}
+        \resumeItem{Développement d'API REST évolutives (Node.js) pour l'intégration système~; mise en place de l'authentification JWT avec contrôle d'accès basé sur les rôles (RBAC)}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Martelli Tunisia}{Bizerte, Tunisie}
+      {Développeur Full Stack (Stage)}{Juil. 2023 -- Mai 2024}
+      \resumeItemListStart
+        \resumeItem{Développement d'une application de gestion des stocks en temps réel avec mises à jour via WebSocket}
+        \resumeItem{Développement et sécurisation de services backend et d'API avec authentification JWT}
+        \resumeItem{Conteneurisation des services avec Docker pour des environnements de développement et de production cohérents}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digit Kakushin Soft}{Sfax, Tunisie}
+      {Développeur Mobile (Stage)}{Fév. -- Juin 2023}
+      \resumeItemListStart
+        \resumeItem{Développement d'une application mobile multiplateforme (Flutter) comptant plus de 100 utilisateurs actifs, avec notifications push (taux de livraison de 99\%)}
+        \resumeItem{Intégration du frontend mobile avec des services backend Spring Boot via API REST}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projets Phares}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Pipeline Big Data Esport} $|$ \emph{Apache Kafka, Apache Spark, Docker, Python}}{}
+          \resumeItemListStart
+            \resumeItem{Plateforme d'analyse de flux de type production pour les données esport, basée sur l'API Riot Games}
+            \resumeItem{Conception de l'ingestion et du traitement en temps réel avec Kafka et Spark Structured Streaming, tableaux de bord de supervision en direct, déploiement modulaire et conteneurisé}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Plateforme de Gestion RH MLM} $|$ \emph{React, Node.js, n8n, OCR}}{}
+          \resumeItemListStart
+            \resumeItem{Plateforme RH d'entreprise multi-applications couvrant le cycle de vie des employés, la gestion des congés et la présence}
+            \resumeItem{Pipelines de données OCR automatisés et support multilingue (FR/EN/AR)}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{AgriSmart -- Prédiction de Rendement Agricole par IA} $|$ \emph{XGBoost, ResNet18, FastAPI}}{}
+          \resumeItemListStart
+            \resumeItem{Modèles XGBoost pour la prédiction des cultures/engrais (98\% de précision, 22 classes de cultures)}
+            \resumeItem{CNN ResNet18 affiné pour la détection de maladies des plantes (99\% de précision, 38 classes de maladies)}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Plateforme d'Imagerie Médicale OCT par IA} $|$ \emph{TensorFlow/Keras, CNN, Flask}}{}
+          \resumeItemListStart
+            \resumeItem{Plateforme complète pour le dépistage assisté par IA des maladies rétiniennes~; CNN personnalisé atteignant 89\% de précision de validation}
+            \resumeItem{Pipeline d'inférence livrant des résultats en moins de 3 secondes}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    \small{\textit{Projets additionnels --- plateforme d'entreprise .NET/Azure, système de pointage biométrique, gestion des stocks en temps réel, applications mobiles --- disponibles sur le portfolio et GitHub.}}
+
+
+%-----------EDUCATION-----------
+\section{Formation}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Iteam University}{Tunis, Tunisie}
+      {Génie Informatique --- Big Data \& Business Intelligence}{}
+      \resumeItemListStart
+        \resumeItem{Frameworks de traitement Big Data~: Hadoop, Apache Spark, PySpark}
+        \resumeItem{Outils de plateforme de données~: Databricks $\quad$ Supervision~: Grafana}
+        \resumeItem{Fondamentaux de modélisation de données, d'entreposage et de business intelligence}
+      \resumeItemListEnd
+    \resumeSubheading
+      {ISIMS}{Sfax, Tunisie}
+      {Licence en Sciences Informatiques et Multimédia}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------SKILLS-----------
+\section{Compétences Techniques}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Données \& Cloud}{: Apache Spark, PySpark, Hadoop, Databricks, Apache Kafka, Grafana, Azure Data Factory (Apprentissage), Azure Synapse (Apprentissage)} \\
+     \textbf{Bases de données}{: MongoDB, SQL Server, EF Core} \\
+     \textbf{Backend}{: Node.js/Express, FastAPI, Flask, Spring Boot, .NET} \\
+     \textbf{IA/ML}{: TensorFlow/Keras, PyTorch, XGBoost, CNN, ResNet18} \\
+     \textbf{DevOps \& Auth Cloud}{: Docker, CI/CD, Azure DevOps, Azure AD, Microsoft Graph API, JWT/RBAC}
+    }}
+ \end{itemize}
+
+%-----------LANGUAGES-----------
+\section{Langues}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     Français (Courant) $\quad\bullet\quad$ Anglais (Professionnel) $\quad\bullet\quad$ Arabe (Langue maternelle)
+    }}
+ \end{itemize}
+
+\end{document}
