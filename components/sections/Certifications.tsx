@@ -40,7 +40,7 @@ export function Certifications() {
             className="mx-auto mt-4 h-1 w-16 rounded-full bg-[var(--accent)]"
           />
           <p className="mx-auto mt-4 max-w-xl text-lg text-[var(--muted)]">
-            Formal proof points for the stack I build with — cloud, data, and
+            Formal proof points for the stack I build with   cloud, data, and
             engineering depth.
           </p>
         </motion.div>

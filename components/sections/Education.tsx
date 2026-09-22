@@ -1,6 +1,6 @@
 "use client";
 
-import { GraduationCap, BookOpen, Sparkles } from "lucide-react";
+import { GraduationCap, BookOpen } from "lucide-react";
 import { motion, useReducedMotion } from "@/components/Motion";
 import { education } from "@/data/education";
 
@@ -38,7 +38,7 @@ export function Education() {
             className="mx-auto mt-4 h-1 w-16 rounded-full bg-[var(--accent)]"
           />
           <p className="mx-auto mt-4 max-w-xl text-lg text-[var(--muted)]">
-            From foundations to data engineering — building the stack behind
+            From foundations to data engineering   building the stack behind
             reliable systems.
           </p>
         </motion.div>
@@ -174,6 +174,18 @@ export function Education() {
                   <p className="mt-2 text-sm leading-relaxed text-[var(--muted)]">
                     {entry.summary}
                   </p>
+                )}
+                {entry.coursework && entry.coursework.length > 0 && (
+                  <ul className="mt-3 flex flex-wrap gap-2">
+                    {entry.coursework.map((skill) => (
+                      <li
+                        key={skill}
+                        className="rounded-full bg-[var(--accent-subtle)] px-2.5 py-1 text-xs font-medium text-[var(--accent)]"
+                      >
+                        {skill}
+                      </li>
+                    ))}
+                  </ul>
                 )}
               </div>
             </motion.li>

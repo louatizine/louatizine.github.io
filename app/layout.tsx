@@ -31,7 +31,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${profile.name} — ${profile.title}`,
+  title: `${profile.name}   ${profile.title}`,
   description: profile.valueProposition.join(" "),
 };
 

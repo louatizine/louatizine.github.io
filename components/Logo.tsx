@@ -6,7 +6,7 @@ type LogoProps = {
 
 /**
  * Signature-in-tags logo: < Zine eddine Louati />
- * Developer identity meets personal signature — code brackets frame a handwritten name.
+ * Developer identity meets personal signature   code brackets frame a handwritten name.
  */
 export function Logo({ className = "", size = "md" }: LogoProps) {
   const isSm = size === "sm";

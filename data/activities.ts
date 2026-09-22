@@ -15,7 +15,7 @@ export const activities: Activity[] = [
     organization: "El Alia Sports Team",
     period: "2010–2019",
     description:
-      "Years of team training and competition — building discipline, stamina, and the habit of showing up.",
+      "Years of team training and competition   building discipline, stamina, and the habit of showing up.",
   },
   {
     id: "microsoft-club-isims",
@@ -24,6 +24,6 @@ export const activities: Activity[] = [
     organization: "Microsoft Club, ISIMS",
     period: "2010–2019",
     description:
-      "Active in a campus tech community — workshops, peer learning, and early exposure to Microsoft tools.",
+      "Active in a campus tech community   workshops, peer learning, and early exposure to Microsoft tools.",
   },
 ];

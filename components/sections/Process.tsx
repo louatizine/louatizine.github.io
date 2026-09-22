@@ -66,7 +66,7 @@ export function Process() {
             A clear path from data to value
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-[var(--muted)]">
-            Four stages I walk every project through — focused on quality,
+            Four stages I walk every project through   focused on quality,
             reliability, and outcomes you can measure.
           </p>
         </motion.div>

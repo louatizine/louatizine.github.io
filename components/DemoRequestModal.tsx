@@ -68,8 +68,8 @@ export function DemoRequestModal({
               Request a demo
             </h2>
             <p className="mt-1 text-sm text-[var(--muted)]">
-              Leave your details and I&apos;ll follow up — or book a time after
-              you submit.
+              Leave your name, email, and a short message   I&apos;ll follow up
+              by email.
             </p>
           </div>
           <button

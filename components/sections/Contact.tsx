@@ -25,8 +25,8 @@ export function Contact() {
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-[var(--dark-section-muted)]">
               Request a demo of one of my applications, or reach out about Full
-              Stack and Data Engineering opportunities. I&apos;ll follow up by
-              email — you can also book a meeting after you submit.
+              Stack and Data Engineering opportunities. Fill in the form and
+              I&apos;ll follow up by email.
             </p>
           </motion.div>
 
@@ -38,7 +38,7 @@ export function Contact() {
               Request a demo
             </h3>
             <p className="mt-1 text-sm text-[var(--dark-section-muted)]">
-              Share your name and email and I&apos;ll get back to you.
+              Name, email, and message are required   I&apos;ll get back to you.
             </p>
             <div className="mt-6">
               <DemoRequestForm variant="dark" />

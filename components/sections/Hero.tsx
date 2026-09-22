@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { Download, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion, useReducedMotion } from "@/components/Motion";
+import { CvDownloadButton } from "@/components/CvDownloadButton";
 import { profile } from "@/data/profile";
 import { experience } from "@/data/experience";
 import { projects } from "@/data/projects";
@@ -77,14 +78,7 @@ export function Hero() {
                 View My Work
                 <ArrowRight className="h-4 w-4" />
               </a>
-              <a
-                href={profile.cvPath}
-                download
-                className="inline-flex items-center gap-2 rounded-lg border-2 border-[var(--accent)] px-6 py-3 font-semibold text-[var(--accent)] transition-all hover:bg-[var(--accent)] hover:text-white"
-              >
-                <Download className="h-4 w-4" />
-                Download CV
-              </a>
+              <CvDownloadButton />
             </motion.div>
           </div>
 

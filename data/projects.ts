@@ -25,7 +25,7 @@ export const secondaryProjects: SecondaryProject[] = [
     id: "rent-car",
     title: "Rent-Car",
     description:
-      "Car rental management platform with vehicle listings and booking operations.",
+      "Car rental management platform with vehicle listings, booking flows, and operational admin tools for day-to-day fleet handling.",
     stack: ["JavaScript", "React", "Node.js"],
     sourceCode: "https://github.com/louatizine/Rent-Car",
   },
@@ -33,7 +33,7 @@ export const secondaryProjects: SecondaryProject[] = [
     id: "python-university-project",
     title: "Car Rental Platform (University)",
     description:
-      "Flask + React car rental platform with booking management, admin dashboard, and MySQL.",
+      "Flask + React car rental platform with booking management, admin dashboard, role-based views, and MySQL persistence.",
     stack: ["Python", "Flask", "React", "MySQL"],
     sourceCode: "https://github.com/louatizine/PythonUniversityProject",
   },
@@ -44,12 +44,12 @@ export const projects: Project[] = [
     id: "quality-portal",
     title: "Quality Portal",
     problem:
-      "Industrial plants need a unified platform to manage certifications, users, and renewal notifications across multiple sites.",
+      "Industrial plants needed one place to manage certifications, users, and renewal notifications across multiple sites   without losing auditability or access control.",
     architecture:
-      "Modular Clean Architecture on .NET with Blazor Server, EF Core, and Wolverine. Azure AD group-based authorization with live permission sync; Microsoft Graph API and SharePoint for per-plant certificate document storage; Hangfire for scheduled expiration alerts.",
-    role: "Full stack developer — architecture, auth, integrations, and CI/CD.",
+      "Modular Clean Architecture on .NET with Blazor Server, EF Core, and Wolverine. Azure AD group-based roles (Administrator, QualityManager, SimpleUser) with live permission sync and JWT claims injection. Microsoft Graph API and SharePoint store certificate documents in per-plant folders. Hangfire runs configurable expiration alert jobs; Quality Managers maintain custom email recipient lists per certification. Full-page create/edit workflows replace modals for clearer UX. Delivered through Azure DevOps with structured branching and PR reviews.",
+    role: "Full stack developer   architecture, authorization, integrations, notifications, and CI/CD.",
     outcome:
-      "Enterprise certification management with reliable domain events (transactional outbox), configurable per-plant alerts, and Azure DevOps delivery across a multi-developer team.",
+      "Production enterprise certification platform with reliable domain events (transactional outbox), automated SharePoint document filing, and scheduled renewal alerts across a multi-developer team.",
     stack: [
       ".NET",
       "Blazor Server",
@@ -67,12 +67,12 @@ export const projects: Project[] = [
     id: "esport-big-data-pipeline",
     title: "Esport Big Data Pipeline",
     problem:
-      "Esports analytics requires ingesting and processing high-volume, real-time game data at scale.",
+      "Esports analytics needs continuous ingestion of high-volume game events and near-real-time processing so dashboards stay useful during live competition windows.",
     architecture:
-      "Production-oriented big data platform using the Riot Games API as the data source, Apache Kafka for event streaming, and Apache Spark Structured Streaming for real-time processing. Containerized with Docker, designed for GitHub Codespaces and modular scalability.",
-    role: "Designed and built the pipeline architecture end-to-end.",
+      "Riot Games API as the data source, Apache Kafka for event streaming, and Apache Spark Structured Streaming for distributed processing. Modular Python services containerized with Docker for Codespaces-friendly local runs and scalable deployment. Streamlit dashboards expose live pipeline health and analytics views.",
+    role: "Designed and built the pipeline architecture end-to-end   ingestion, streaming, processing, and monitoring.",
     outcome:
-      "A modular, production-ready streaming analytics platform with live monitoring dashboards built in Streamlit.",
+      "A modular, production-oriented streaming analytics platform with live Streamlit monitoring and a clear path from raw Riot events to processed insights.",
     stack: [
       "Apache Kafka",
       "Apache Spark",
@@ -84,18 +84,18 @@ export const projects: Project[] = [
     image: "/projects/bigData.png",
     sourceCode: "https://github.com/louatizine/esport-bigdata-pipeline",
     dataFocus:
-      "Real-time stream ingestion, distributed processing, and event-driven architecture — direct hands-on Kafka and Spark experience.",
+      "Real-time stream ingestion, distributed processing, and event-driven architecture   direct hands-on Kafka and Spark experience.",
   },
   {
     id: "hr-platform",
     title: "HR Management Platform",
     problem:
-      "Organizations need a unified system to manage the full employee lifecycle and daily HR operations across multiple functions.",
+      "Organizations needed a single system for employee lifecycle operations   leave, fleet, licenses, tasks, and documents   instead of scattered spreadsheets and manual handoffs.",
     architecture:
-      "Multi-app platform covering employee management, leave, fleet, software licenses, and collaborative task workflows, with JWT/RBAC, n8n OCR invoice automation, and multi-language support (English, French, Arabic).",
+      "Multi-role React/Node platform with JWT authentication and RBAC across modules: employee management, leave tracking, vehicle fleet, software license administration, and collaborative task workflows. n8n automates invoice OCR (PDF/images → CSV → database). Digital archiving with OCR search, email notifications with user preferences, Material-UI dashboards, and EN/FR/AR i18n.",
     role: "Full stack development and pipeline automation design.",
     outcome:
-      "Production-used HR platform serving 50+ users; OCR invoice pipeline reduced manual processing by 40%.",
+      "Production HR platform serving 50+ users; OCR invoice automation cut manual processing time by about 40%, with real-time notifications and searchable document archives.",
     stack: ["React", "Node.js", "JWT", "RBAC", "n8n", "OCR", "Docker"],
     image: "/projects/hr-platform.png",
     sourceCode: "https://github.com/louatizine/erp",
@@ -106,12 +106,12 @@ export const projects: Project[] = [
     id: "biometric",
     title: "Biometric Attendance System",
     problem:
-      "Attendance tracking across sites required reliable identity capture and consistent synchronization of records.",
+      "Multi-site attendance depended on error-prone manual tracking; identity capture and record sync needed to be fast, consistent, and exportable for admins.",
     architecture:
-      "React frontend, FastAPI backend, MongoDB database, and a C# SDK for biometric hardware integration. Deployed via Docker Compose with MongoDB Atlas setup scripts.",
-    role: "Backend services and real-time sync design.",
+      "Three-service setup: React frontend, FastAPI backend, MongoDB, plus a C# desktop service talking to fingerprint hardware over HTTP. Real-time check-in/out syncs terminals with the central database. Admin dashboard covers analytics charts, attendance stats, and CSV/Excel export. Docker Compose packages the stack for one-command deployment.",
+    role: "Full stack developer   backend APIs, hardware sync design, and deployment packaging.",
     outcome:
-      "Real-time check-in/check-out with fingerprint verification, an admin analytics dashboard, and CSV/Excel export.",
+      "Touchless fingerprint verification with sub-second checks, live terminal-to-database sync, and an admin analytics dashboard ready for operational reporting.",
     stack: ["React", "FastAPI", "MongoDB", "C# SDK", "Docker", "JWT"],
     image: "/projects/biometric.png",
     sourceCode: "https://github.com/louatizine/Fingerprint-Pointage-App",
@@ -122,12 +122,12 @@ export const projects: Project[] = [
     id: "oct-imaging",
     title: "AI-Based OCT Medical Imaging Platform",
     problem:
-      "Clinical OCT image review required faster, consistent screening support without replacing specialist judgment.",
+      "Ophthalmologists reviewing OCT retina scans needed faster, consistent AI-assisted screening support   without replacing specialist judgment.",
     architecture:
-      "Custom CNN for OCT classification with a Flask inference service and React frontend for upload, confidence visualization, and PDF report export.",
-    role: "Full stack developer and ML engineer — model development and inference pipeline.",
+      "Custom CNN trained with TensorFlow/Keras for CNV, DME, Drusen, and Normal classes. Flask inference service returns predictions in under 3 seconds. React frontend handles upload/preview, confidence visualization, personalized care guidance from diagnosis + urgency, PDF report export, and a multi-step Upload → Analyse → Results flow.",
+    role: "Full stack developer and ML engineer   model training, inference pipeline, and clinical-facing UI.",
     outcome:
-      "89% validation accuracy detecting CNV, DME, Drusen, and Normal retina; inference under 3 seconds per scan.",
+      "89% validation accuracy on retinal disease classes; end-to-end screening workflow from scan upload to PDF report in seconds.",
     stack: ["React", "Flask", "TensorFlow/Keras", "MongoDB", "CNN"],
     image: "/projects/OCT.jpg",
     sourceCode:
@@ -139,12 +139,12 @@ export const projects: Project[] = [
     id: "agrismart",
     title: "AgriSmart AI Yield Prediction",
     problem:
-      "Agricultural decision support needed reliable crop yield estimation and disease classification across many plant types.",
+      "Farmers and agronomists needed decision support for crop choice, fertilizer planning, and plant disease identification across many plant types   not isolated models behind notebooks.",
     architecture:
-      "XGBoost models for crop/fertilizer prediction; ResNet18 for disease classification; FastAPI backend with JWT and MongoDB; React dashboard for KPIs and live insights.",
-    role: "Full stack developer and ML engineer — models, API, and dashboard.",
+      "XGBoost models for crop and fertilizer recommendation using seven inputs (N, P, K, temperature, humidity, pH, rainfall). Fine-tuned ResNet18 for leaf disease detection across 38 classes. FastAPI backend with JWT, prediction history, and MongoDB. React + Tailwind dashboard with KPI cards, yield trends, crop distribution charts, weather widget, and instant disease ID with treatment suggestions.",
+    role: "Full stack developer and ML engineer   tabular/CV models, API, and interactive dashboard.",
     outcome:
-      "XGBoost reached 98% accuracy across 22 crop classes; ResNet18 reached 99% accuracy across 38 disease classes.",
+      "98% XGBoost accuracy across 22 crop classes; 99% ResNet18 accuracy across 38 disease classes, wrapped in a usable field-decision UI.",
     stack: ["React", "FastAPI", "XGBoost", "ResNet18", "MongoDB", "PyTorch"],
     image: "/projects/AGRIS.jpg",
     sourceCode: "https://github.com/louatizine/yield_Prediction_Sys",
@@ -155,12 +155,12 @@ export const projects: Project[] = [
     id: "fintness",
     title: "Fintness",
     problem:
-      "People tracking workouts need a simple, fast mobile logging tool.",
+      "People logging workouts need a fast mobile tool that stays usable offline and stays typed end-to-end   without a heavy backend dependency on day one.",
     architecture:
-      "Built with Expo, React Native, and TypeScript. Typed data models, centralized authentication and data-sync services, with a local write queue and planned MongoDB Atlas cloud sync.",
-    role: "Mobile developer, full architecture.",
+      "Expo + React Native + TypeScript with typed data models, centralized auth and data-sync services, a local write queue, and planned MongoDB Atlas cloud sync. Tabbed navigation for Today, History, Progress, and Settings, plus rep/weight tracking and a rest timer.",
+    role: "Mobile developer   full architecture, data models, and UX flows.",
     outcome:
-      "Functional workout tracker with tabbed navigation (Today, History, Progress, Settings), rep/weight tracking, and a rest timer.",
+      "A functional workout tracker with local-first logging, progress history, and a clear path to cloud sync.",
     stack: ["React Native", "TypeScript", "Expo", "MongoDB"],
     image: "/projects/FITNESS.jpg",
     sourceCode: "https://github.com/louatizine/fintness",
@@ -170,12 +170,12 @@ export const projects: Project[] = [
     id: "inventory",
     title: "Real-Time Inventory System",
     problem:
-      "Inventory views lagged behind physical stock movements, limiting operational responsiveness.",
+      "Warehouse inventory views lagged behind physical stock movements, so operators worked from stale numbers and slow refreshes.",
     architecture:
-      "WebSocket-based real-time updates over a secure Node.js/React API backend, deployed with Docker.",
-    role: "Full stack development of live inventory flows.",
+      "Node.js + React application with WebSocket push for live stock levels across locations, secured REST APIs for mutations, and Docker packaging for consistent dev/prod deploys.",
+    role: "Full stack developer   live inventory flows, API security, and containerization.",
     outcome:
-      "Reduced update latency from ~5 seconds to near-instantaneous stock updates across connected clients.",
+      "Cut update latency from roughly 5 seconds to near-instant stock updates across connected clients.",
     stack: ["Node.js", "React", "WebSockets", "Docker"],
     image: "/projects/INVEN.jpg",
     dataFocus:

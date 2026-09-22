@@ -13,7 +13,7 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Customize before sharing
 
-1. Edit **[`data/profile.ts`](data/profile.ts)** — replace `YOUR_NAME`, email, LinkedIn, and GitHub placeholders.
+1. Edit **[`data/profile.ts`](data/profile.ts)**   replace `YOUR_NAME`, email, LinkedIn, and GitHub placeholders.
 2. Replace **[`public/cv.pdf`](public/cv.pdf)** with your real CV (the Download CV button links here).
 3. Update other content under `data/` as needed (`experience.ts`, `projects.ts`, `skills.ts`, etc.).
 

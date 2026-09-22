@@ -55,12 +55,20 @@ export function Projects() {
                     {project.title}
                   </h3>
 
-                  <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-[var(--muted)]">
+                  <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">
                     {project.problem}
                   </p>
+                  <p className="mt-2 text-sm leading-relaxed text-[var(--fg)]/80">
+                    {project.outcome}
+                  </p>
+                  {project.role && (
+                    <p className="mt-2 text-xs font-medium text-[var(--accent)]">
+                      Role: {project.role}
+                    </p>
+                  )}
 
                   <div className="mt-4 flex flex-wrap gap-2">
-                    {project.stack.slice(0, 3).map((tech) => (
+                    {project.stack.slice(0, 5).map((tech) => (
                       <span
                         key={tech}
                         className="rounded-full bg-[var(--accent-subtle)] px-3 py-1 text-xs font-medium text-[var(--accent)]"
@@ -68,9 +76,9 @@ export function Projects() {
                         {tech}
                       </span>
                     ))}
-                    {project.stack.length > 3 && (
+                    {project.stack.length > 5 && (
                       <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
-                        +{project.stack.length - 3}
+                        +{project.stack.length - 5}
                       </span>
                     )}
                   </div>

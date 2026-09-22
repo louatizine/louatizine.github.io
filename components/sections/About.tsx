@@ -12,7 +12,7 @@ const focusAreas = [
   },
   {
     label: "Backend systems",
-    detail: "APIs, enterprise modules, automation at scale",
+    detail: "Clean Architecture, APIs, Azure AD integrations",
   },
   {
     label: "Next focus",
