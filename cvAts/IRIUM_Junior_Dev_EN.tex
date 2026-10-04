@@ -1,0 +1,162 @@
+%-------------------------
+% CV   Zine Eddine Louati
+% IRIUM SOFTWARE --- Junior Developer (Bourg-de-Péage)
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[a4paper,top=1cm,bottom=1cm,left=1.1cm,right=1.1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0pt}
+\setlist{nosep}
+\pdfgentounicode=1
+
+\titleformat{\section}{
+  \scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{1pt}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}, itemsep=1pt, parsep=0pt, topsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.16in,itemsep=0pt,parsep=0pt,topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Zine Eddine Louati} \\ \vspace{2pt}
+    \small
+    Bizerte, Tunisia $|$
+    \href{mailto:zineeddinelouati.2000@gmail.com}{zineeddinelouati.2000@gmail.com} $|$
+    \href{https://www.linkedin.com/in/zine-louati/}{LinkedIn} $|$
+    \href{https://github.com/louatizine}{GitHub} $|$
+    \href{https://zayneddine.me}{Portfolio} \\
+    \vspace{1pt}
+    \textbf{Junior Developer --- C\# .NET / ERP}
+    \\ \textit{\small Available to relocate to Bourg-de-Péage}
+\end{center}
+
+
+\section{Professional Summary}
+\small{Junior developer with 2+ years building C\# .NET web applications, including a production ERP. I contribute to technical architecture (Clean Architecture), ship business features, and work with the people who put those modules in users' hands. Strict on quality (clean code, reviews, DevOps), comfortable in agile, professional technical English. Bac~+5 Computer Engineering diploma (2026). Based in Tunisia, ready to join Bourg-de-Péage.}
+
+
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+    \small{\item{
+     \textbf{C\# / .NET}{: C\#, .NET, Blazor Server, EF Core, Clean Architecture} \\
+     \textbf{Web}{: CSS, HTML, JavaScript, React, REST APIs} \\
+     \textbf{Software engineering}{: DevOps, CI/CD, Azure DevOps, Git, Agile / Scrum, clean code} \\
+     \textbf{Data}{: SQL Server, JWT, RBAC}
+    }}
+ \end{itemize}
+
+
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dynamix Services}{Bizerte, Tunisia}
+      {Full Stack ERP Developer}{June 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Contributed to the technical architecture of a Clean Architecture ERP Quality Portal (C\# .NET / Blazor) for multi-site industry}
+        \resumeItem{Developed business features (certifications, users, notifications, documents) used daily by 50+ users}
+        \resumeItem{Worked with business stakeholders to integrate modules into their real context (plants, HR, fleet, licenses)}
+        \resumeItem{Quality and DevOps: clean code, PR reviews, Azure DevOps, reliable domain events (EF Core / Wolverine), Hangfire alerts}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Martelli Tunisia}{Bizerte, Tunisia}
+      {Full Stack Developer (Internship)}{July 2023 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{Built a web inventory app (React, CSS, REST APIs, JWT); update latency from about 5s to near-instant}
+        \resumeItem{Team delivery with Git and Docker}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digit Kakushin Soft}{Sfax, Tunisia}
+      {Mobile Developer (Internship)}{February 2023 -- June 2023}
+      \resumeItemListStart
+        \resumeItem{Leave app for 100+ employees on Java Spring Boot APIs; 99\% push delivery}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Iteam University}{Tunis, Tunisia}
+      {Bac~+5 Computer Engineering diploma}{September 2023 -- June 2026}
+      \resumeItemListStart
+        \resumeItem{Scrum, software engineering, web applications}
+      \resumeItemListEnd
+    \resumeSubheading
+      {ISIMSF}{Sfax, Tunisia}
+      {Bachelor's Bac~+3 --- Computer Science and Multimedia}{September 2020 -- June 2023}
+      \resumeItemListStart
+        \resumeItem{JEE, Scrum, web applications}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Quality Portal --- Industry ERP module} $|$ \emph{C\# .NET, Blazor, EF Core, Clean Architecture}}{}
+          \resumeItemListStart
+            \resumeItem{Modular business core: architecture, roles, documents, alerts, shipped in a team}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{HR / ERP platform} $|$ \emph{React, CSS, Node.js, JWT}}{}
+          \resumeItemListStart
+            \resumeItem{Business features (employees, leave, fleet, licenses) for 50+ users; OCR cut manual entry by 40\%}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Biometric attendance} $|$ \emph{C\#, React, CSS}}{}
+          \resumeItemListStart
+            \resumeItem{C\# service + web UI, admin dashboard, CSV/Excel export}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+    \small{\item{
+     French (Fluent) $\quad\bullet\quad$ English (Professional --- technical) $\quad\bullet\quad$ Arabic (Native)
+    }}
+ \end{itemize}
+
+\end{document}

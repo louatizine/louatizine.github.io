@@ -1,0 +1,194 @@
+%-------------------------
+% CV   Zine Eddine Louati
+% Escape --- Junior Full-Stack Engineer (Product & Platform), Paris
+% Based on "Jake's Resume"   ATS-friendly (single column, no icons/graphics).
+% Does not replace CvEng.tex (general data-engineering CV).
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ATS parsing fix: make ligatures searchable as plain text, not glyphs
+\pdfgentounicode=1
+
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{2pt}]
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in,itemsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{1pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Zine Eddine Louati} \\ \vspace{2pt}
+    \small
+    Bizerte, Tunisia $|$
+    \href{mailto:zineeddinelouati.2000@gmail.com}{zineeddinelouati.2000@gmail.com} $|$
+    \href{https://www.linkedin.com/in/zine-louati/}{LinkedIn} $|$
+    \href{https://github.com/louatizine}{GitHub} $|$
+    \href{https://zayneddine.me}{Portfolio} \\
+    \vspace{1pt}
+    \textbf{Junior Full-Stack Engineer (Product \& Platform)}
+    \\ \textit{\small Available to relocate to Paris}
+\end{center}
+
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{Junior Full-Stack Engineer with about 2 years building web applications across frontend and backend. I ship product features, data models, and user-facing dashboards with Node.js, React, and TypeScript, using REST APIs, JWT / Role-Based Access Control (RBAC), and Apache Kafka. I work in small product teams, care about user experience, and I am currently learning Svelte, GraphQL, Prisma, and PostgreSQL. Fluent in French and available to relocate to Paris.}
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& runtime}{: TypeScript, JavaScript, Node.js, Python, C\#, SQL} \\
+     \textbf{Frontend}{: React, Blazor, Flutter, React Native} \\
+     \textbf{Backend \& APIs}{: REST APIs, Node.js/Express, FastAPI, Spring Boot, Flask} \\
+     \textbf{Data}{: SQL Server, MongoDB, MySQL, Apache Kafka, Grafana} \\
+     \textbf{Auth \& access control}{: JWT, RBAC, Azure Active Directory (Azure AD)} \\
+     \textbf{DevOps}{: Docker, CI/CD, GitHub Actions} \\
+     \textbf{AI/ML}{: TensorFlow/Keras, PyTorch, XGBoost} \\
+     \textbf{Currently learning}{: Svelte, GraphQL, Prisma, PostgreSQL, GitLab CI, OWASP API Top 10}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dynamix Services}{Bizerte, Tunisia}
+      {Full Stack ERP Developer}{June 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Delivered frontend and backend product features for a multi-module enterprise platform (React, Node.js, .NET/Blazor), including user-facing workflows and dashboards used by 50+ users}
+        \resumeItem{Designed and maintained the data model for industrial certifications and HR operations; secured APIs with JWT, RBAC, and Azure AD group-based authorization}
+        \resumeItem{Built an n8n + Optical Character Recognition (OCR) pipeline (extraction $\rightarrow$ transformation $\rightarrow$ structured storage) that reduced manual data entry by 40\%}
+        \resumeItem{Architected a modular Clean Architecture Quality Portal with scheduled expiration alerts and automatic certificate document storage via Microsoft Graph API and SharePoint}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Martelli Tunisia}{Bizerte, Tunisia}
+      {Full Stack Developer (Internship)}{July 2023 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{Developed a real-time inventory web application with WebSocket live updates, cutting stock-update latency from about 5 seconds to near-instant}
+        \resumeItem{Built and secured backend REST APIs with JWT authentication}
+        \resumeItem{Containerized services with Docker for consistent development and production environments}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digit Kakushin Soft}{Sfax, Tunisia}
+      {Mobile Developer (Internship)}{February 2023 -- June 2023}
+      \resumeItemListStart
+        \resumeItem{Built a cross-platform leave management app (Flutter) used by 100+ employees, with push notifications at a 99\% delivery rate}
+        \resumeItem{Integrated the mobile frontend with Spring Boot backend services via REST APIs}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Iteam University}{Tunis, Tunisia}
+      {Computer Engineering --- Big Data \& Business Intelligence}{September 2023 -- June 2026}
+    \resumeSubheading
+      {ISIMSF}{Sfax, Tunisia}
+      {Bachelor's degree in Computer Science and Multimedia}{September 2020 -- June 2023}
+      \resumeItemListStart
+        \resumeItem{Coursework: JEE, Cloud Computing, Big Data, Scrum, AI}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{HR Management Platform} $|$ \emph{React, Node.js, JWT, RBAC, n8n, OCR}}{}
+          \resumeItemListStart
+            \resumeItem{Multi-role product covering employee lifecycle, leave, fleet, licenses, and collaborative task workflows for 50+ users}
+            \resumeItem{n8n OCR invoice pipeline (PDF/images $\rightarrow$ CSV $\rightarrow$ database) cut manual processing by 40\%; real-time notifications and a searchable document archive}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Esport Big Data Pipeline} $|$ \emph{Apache Kafka, Apache Spark, Docker, Python, Streamlit}}{}
+          \resumeItemListStart
+            \resumeItem{Built a streaming analytics platform on the Riot Games API with real-time ingestion and processing via Kafka and Spark Structured Streaming}
+            \resumeItem{Shipped live Streamlit dashboards for pipeline health and analytics, with modular Docker deployment}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Quality Portal --- Enterprise Certification Platform} $|$ \emph{.NET, Blazor Server, EF Core, Wolverine, Azure AD}}{}
+          \resumeItemListStart
+            \resumeItem{Modular Clean Architecture product for multi-plant certifications, users, and notifications}
+            \resumeItem{Azure AD group-based roles with live permission sync; Hangfire-scheduled expiration alerts and configurable notification recipients}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------LANGUAGES-----------
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     French (Fluent) $\quad\bullet\quad$ English (Professional) $\quad\bullet\quad$ Arabic (Native)
+    }}
+ \end{itemize}
+
+\end{document}

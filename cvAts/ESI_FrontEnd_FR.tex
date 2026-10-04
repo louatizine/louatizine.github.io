@@ -1,0 +1,159 @@
+%-------------------------
+% CV   Zine Eddine Louati
+% E-SI / Groupe Capelle --- Développeur Front-End (Vézénobres)
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[a4paper,top=1cm,bottom=1cm,left=1.1cm,right=1.1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english,french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0pt}
+\setlist{nosep}
+\pdfgentounicode=1
+
+\titleformat{\section}{
+  \scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{1pt}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}, itemsep=1pt, parsep=0pt, topsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.16in,itemsep=0pt,parsep=0pt,topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Zine Eddine Louati} \\ \vspace{2pt}
+    \small
+    Bizerte, Tunisie $|$
+    \href{mailto:zineeddinelouati.2000@gmail.com}{zineeddinelouati.2000@gmail.com} $|$
+    \href{https://www.linkedin.com/in/zine-louati/}{LinkedIn} $|$
+    \href{https://github.com/louatizine}{GitHub} $|$
+    \href{https://zayneddine.me}{Portfolio} \\
+    \vspace{1pt}
+    \textbf{Développeur Front-End}
+    \\ \textit{\small Disponible pour une relocalisation à Vézénobres / Alès}
+\end{center}
+
+
+\section{Profil}
+\small{Développeur Front-End, diplôme d'ingénieur Bac~+5 (2026), avec plus d'un an à concevoir des interfaces React modernes, claires et maintenables. Je traduis des besoins métier complexes en parcours utilisateurs simples --- RH, industrie, imagerie médicale --- avec un vrai souci de performance, d'UX et de qualité de code. À l'aise avec Git et le travail en petite équipe. Motivé pour monter sur Vite.js, TanStack et Zustand. Basé en Tunisie, prêt à rejoindre le siège de Vézénobres.}
+
+
+\section{Compétences techniques}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+    \small{\item{
+     \textbf{Front-end}{: React (ReactJS), JavaScript, TypeScript, Material-UI, Blazor} \\
+     \textbf{UX / UI et performance}{: parcours multi-étapes, dashboards, i18n (FR/EN/AR), mises à jour temps réel} \\
+     \textbf{APIs et collaboration back}{: API REST, JWT, Node.js, Git, GitHub Actions, Azure DevOps} \\
+     \textbf{Outils}{: Docker, CI/CD}
+    }}
+ \end{itemize}
+
+
+\section{Expérience professionnelle}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dynamix Services}{Bizerte, Tunisie}
+      {Développeur Full Stack ERP --- focus front}{Juin 2024 -- Présent}
+      \resumeItemListStart
+        \resumeItem{Conçu et développé des interfaces React (Material-UI, i18n FR/EN/AR) pour une plateforme RH / ERP utilisée par plus de 50 utilisateurs}
+        \resumeItem{Traduit des besoins métier complexes (congés, flotte, licences, certifications industrielles) en parcours utilisateurs clairs, hors-modales}
+        \resumeItem{Amélioré l'UX et la maintenabilité~: tableaux de bord, notifications temps réel, archive documentaire consultable}
+        \resumeItem{Collaboré au quotidien avec le back-end (API REST, JWT/RBAC) et les équipes métier~; Git, revues de PR, Azure DevOps}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Martelli Tunisia}{Bizerte, Tunisie}
+      {Développeur Full Stack (Stage)}{Juillet 2023 -- Mai 2024}
+      \resumeItemListStart
+        \resumeItem{Développé le front React d'une application de stocks en temps réel (WebSocket), faisant passer la latence d'environ 5 secondes à quasi-instantanée}
+        \resumeItem{Travail en équipe avec Git et Docker pour des livraisons front/back cohérentes}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digit Kakushin Soft}{Sfax, Tunisie}
+      {Développeur Mobile (Stage)}{Février 2023 -- Juin 2023}
+      \resumeItemListStart
+        \resumeItem{Construit une interface mobile (Flutter) de gestion des congés pour plus de 100 employés, notifications push 99\,\%, branchée sur des API REST}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Formation}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Iteam University}{Tunis, Tunisie}
+      {Diplôme d'ingénieur Bac~+5 --- Génie informatique}{Septembre 2023 -- Juin 2026}
+    \resumeSubheading
+      {ISIMSF}{Sfax, Tunisie}
+      {Licence --- Sciences informatiques et multimédia}{Septembre 2020 -- Juin 2023}
+  \resumeSubHeadingListEnd
+
+
+\section{Projets}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Plateforme de gestion RH} $|$ \emph{React, JavaScript, Material-UI, JWT}}{}
+          \resumeItemListStart
+            \resumeItem{Application front moderne from scratch~: modules employés, congés, flotte, licences, plus de 50 utilisateurs}
+            \resumeItem{UX soignée (dashboards, i18n, notifications)~; OCR factures $-$40\,\% de traitement manuel}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Plateforme d'imagerie médicale OCT} $|$ \emph{React, JavaScript, UX clinique}}{}
+          \resumeItemListStart
+            \resumeItem{Interface médicale~: upload $\rightarrow$ analyse $\rightarrow$ résultats, visualisation de confiance, export PDF, inférence $<$ 3~s}
+            \resumeItem{Parcours pensé pour des professionnels de santé, pas pour une démo}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Stocks temps réel / Pointage biométrique} $|$ \emph{React, performance, dashboards}}{}
+          \resumeItemListStart
+            \resumeItem{Front React orienté performance (latence 5~s $\rightarrow$ instantané) et tableau de bord admin (graphiques, export CSV/Excel)}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+\section{Langues}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+    \small{\item{
+     Français (Courant) $\quad\bullet\quad$ Anglais (Professionnel) $\quad\bullet\quad$ Arabe (Langue maternelle)
+    }}
+ \end{itemize}
+
+\end{document}

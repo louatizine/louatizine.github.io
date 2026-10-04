@@ -1,0 +1,163 @@
+%-------------------------
+% CV   Zine Eddine Louati
+% IRIUM SOFTWARE --- Développeur junior (Bourg-de-Péage)
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[a4paper,top=1cm,bottom=1cm,left=1.1cm,right=1.1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english,french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0pt}
+\setlist{nosep}
+\pdfgentounicode=1
+
+\titleformat{\section}{
+  \scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{1pt}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}, itemsep=1pt, parsep=0pt, topsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.16in,itemsep=0pt,parsep=0pt,topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Zine Eddine Louati} \\ \vspace{2pt}
+    \small
+    Bizerte, Tunisie $|$
+    \href{mailto:zineeddinelouati.2000@gmail.com}{zineeddinelouati.2000@gmail.com} $|$
+    \href{https://www.linkedin.com/in/zine-louati/}{LinkedIn} $|$
+    \href{https://github.com/louatizine}{GitHub} $|$
+    \href{https://zayneddine.me}{Portfolio} \\
+    \vspace{1pt}
+    \textbf{Développeur junior --- C\# .NET / ERP}
+    \\ \textit{\small Disponible pour une relocalisation à Bourg-de-Péage}
+\end{center}
+
+
+\section{Profil}
+\small{Développeur junior avec plus de 2 ans sur des applications web C\# .NET, dont un ERP en production. Je prends part à l'architecture technique (Clean Architecture), je développe des fonctionnalités métier, et je collabore avec les équipes qui les mettent entre les mains des utilisateurs. Rigoureux sur la qualité (clean code, revues, DevOps), à l'aise en agile, anglais technique professionnel. Diplôme d'ingénieur Bac~+5 (2026). Basé en Tunisie, prêt à rejoindre Bourg-de-Péage.}
+
+
+\section{Compétences techniques}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+    \small{\item{
+     \textbf{C\# / .NET}{: C\#, .NET, Blazor Server, EF Core, Clean Architecture} \\
+     \textbf{Web}{: CSS, HTML, JavaScript, React, API REST} \\
+     \textbf{Génie logiciel}{: DevOps, CI/CD, Azure DevOps, Git, Agile / Scrum, clean code} \\
+     \textbf{Données}{: SQL Server, JWT, RBAC}
+    }}
+ \end{itemize}
+
+
+\section{Expérience professionnelle}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dynamix Services}{Bizerte, Tunisie}
+      {Développeur Full Stack ERP}{Juin 2024 -- Présent}
+      \resumeItemListStart
+        \resumeItem{Participé à la conception de l'architecture technique d'un Quality Portal ERP en Clean Architecture (C\# .NET / Blazor) pour un métier industrie multi-sites}
+        \resumeItem{Développé des fonctionnalités métier (certifications, utilisateurs, notifications, documents) utilisées au quotidien par plus de 50 utilisateurs}
+        \resumeItem{Collaboré avec les interlocuteurs métier pour intégrer les modules dans leur contexte réel (usines, RH, flotte, licences)}
+        \resumeItem{Qualité et DevOps~: clean code, revues de PR, Azure DevOps, événements de domaine fiables (EF Core / Wolverine), alertes Hangfire}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Martelli Tunisia}{Bizerte, Tunisie}
+      {Développeur Full Stack (Stage)}{Juillet 2023 -- Mai 2024}
+      \resumeItemListStart
+        \resumeItem{Développé une application web de stocks (React, CSS, API REST, JWT)~; latence de mise à jour d'environ 5~s à quasi-instantanée}
+        \resumeItem{Livraison en équipe avec Git et Docker}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digit Kakushin Soft}{Sfax, Tunisie}
+      {Développeur Mobile (Stage)}{Février 2023 -- Juin 2023}
+      \resumeItemListStart
+        \resumeItem{Application de congés pour plus de 100 employés, branchée sur des API Java Spring Boot~; satisfaction mesurée (push 99\,\%)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Formation}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Iteam University}{Tunis, Tunisie}
+      {Diplôme d'ingénieur Bac~+5 --- Génie informatique}{Septembre 2023 -- Juin 2026}
+      \resumeItemListStart
+        \resumeItem{Scrum, génie logiciel, applications web}
+      \resumeItemListEnd
+    \resumeSubheading
+      {ISIMSF}{Sfax, Tunisie}
+      {Licence Bac~+3 --- Sciences informatiques et multimédia}{Septembre 2020 -- Juin 2023}
+      \resumeItemListStart
+        \resumeItem{JEE, Scrum, applications web}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Projets}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Quality Portal --- Module ERP industrie} $|$ \emph{C\# .NET, Blazor, EF Core, Clean Architecture}}{}
+          \resumeItemListStart
+            \resumeItem{Re-développement d'un socle métier~: architecture modulaire, rôles, documents, alertes, livré en équipe}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Plateforme ERP / RH} $|$ \emph{React, CSS, Node.js, JWT}}{}
+          \resumeItemListStart
+            \resumeItem{Fonctionnalités métier (employés, congés, flotte, licences) pour plus de 50 utilisateurs~; OCR $-$40\,\% de saisie manuelle}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Pointage biométrique} $|$ \emph{C\#, React, CSS}}{}
+          \resumeItemListStart
+            \resumeItem{Service C\# + interfaces web, dashboard admin, export CSV/Excel}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+\section{Langues}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+    \small{\item{
+     Français (Courant) $\quad\bullet\quad$ Anglais (Professionnel --- technique) $\quad\bullet\quad$ Arabe (Langue maternelle)
+    }}
+ \end{itemize}
+
+\end{document}

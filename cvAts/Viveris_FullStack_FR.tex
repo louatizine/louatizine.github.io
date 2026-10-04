@@ -1,0 +1,172 @@
+%-------------------------
+% CV   Zine Eddine Louati
+% Viveris --- Développeur Full Stack (France)
+% Based on "Jake's Resume"   ATS-friendly (single column, no icons/graphics).
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[a4paper,top=1cm,bottom=1cm,left=1.1cm,right=1.1cm]{geometry}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english,french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{empty}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\parskip}{0pt}
+\setlist{nosep}
+
+\pdfgentounicode=1
+
+\titleformat{\section}{
+  \scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{1pt}]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.12in, label={}, itemsep=1pt, parsep=0pt, topsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.16in,itemsep=0pt,parsep=0pt,topsep=1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Zine Eddine Louati} \\ \vspace{2pt}
+    \small
+    Bizerte, Tunisie $|$
+    \href{mailto:zineeddinelouati.2000@gmail.com}{zineeddinelouati.2000@gmail.com} $|$
+    \href{https://www.linkedin.com/in/zine-louati/}{LinkedIn} $|$
+    \href{https://github.com/louatizine}{GitHub} $|$
+    \href{https://zayneddine.me}{Portfolio} \\
+    \vspace{1pt}
+    \textbf{Développeur Full Stack}
+    \\ \textit{\small Disponible pour une relocalisation en France}
+\end{center}
+
+
+\section{Profil}
+\small{Développeur Full Stack, diplôme d'ingénieur Bac~+5 (Génie informatique, 2026), avec plus d'un an d'expérience en production. J'analyse le besoin, définis l'architecture technique, conçois et développe des applications web (C\# .NET, Node.js, Java, React, JavaScript) et en assure le bon fonctionnement auprès des utilisateurs. À l'aise en contexte multi-projets (industrie, RH, applications métier) et disponible pour accompagner les clients de Viveris en France.}
+
+
+\section{Compétences techniques}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+    \small{\item{
+     \textbf{Back-end}{: C\# .NET, Node.js (NodeJS), Java, Spring Boot} \\
+     \textbf{Front-end}{: React (ReactJS), JavaScript, Blazor} \\
+     \textbf{Bases de données}{: SQL Server, MySQL, MongoDB} \\
+     \textbf{Architecture et API}{: Clean Architecture, API REST, JWT, RBAC} \\
+     \textbf{DevOps}{: Docker, CI/CD, GitHub Actions, Azure DevOps}
+    }}
+ \end{itemize}
+
+
+\section{Expérience professionnelle}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Dynamix Services}{Bizerte, Tunisie}
+      {Développeur Full Stack ERP}{Juin 2024 -- Présent}
+      \resumeItemListStart
+        \resumeItem{Analysé les besoins métier (certifications industrielles, RH) et conçu des solutions applicatives utilisées par plus de 50 utilisateurs}
+        \resumeItem{Défini l'architecture technique d'un Quality Portal en Clean Architecture (C\# .NET / Blazor) pour un contexte industrie multi-sites}
+        \resumeItem{Développé le front-end et le back-end d'une plateforme ERP (React, Node.js, .NET), avec API REST sécurisées (JWT, RBAC) et données sur SQL Server}
+        \resumeItem{Contrôlé le bon fonctionnement en production~: alertes d'expiration, stockage documentaire (Microsoft Graph, SharePoint) et pipeline n8n/OCR réduisant la saisie manuelle de 40\,\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Martelli Tunisia}{Bizerte, Tunisie}
+      {Développeur Full Stack (Stage)}{Juillet 2023 -- Mai 2024}
+      \resumeItemListStart
+        \resumeItem{Conçu et développé une application web de gestion des stocks en temps réel (React, Node.js, JavaScript, WebSocket)}
+        \resumeItem{Développé et sécurisé des API REST backend avec authentification JWT~; conteneurisation Docker}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Digit Kakushin Soft}{Sfax, Tunisie}
+      {Développeur Mobile (Stage)}{Février 2023 -- Juin 2023}
+      \resumeItemListStart
+        \resumeItem{Développé une application de gestion des congés (Flutter) utilisée par plus de 100 employés, connectée à un back-end Java Spring Boot via API REST}
+        \resumeItem{Notifications push à un taux de livraison de 99\,\%}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Formation}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Iteam University}{Tunis, Tunisie}
+      {Diplôme d'ingénieur Bac~+5 --- Génie informatique (Big Data \& Business Intelligence)}{Septembre 2023 -- Juin 2026}
+    \resumeSubheading
+      {ISIMSF}{Sfax, Tunisie}
+      {Licence --- Sciences informatiques et multimédia}{Septembre 2020 -- Juin 2023}
+      \resumeItemListStart
+        \resumeItem{Cours~: JEE (Java), Cloud Computing, Big Data, Scrum}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\section{Projets}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Quality Portal --- Plateforme de certification (industrie)} $|$ \emph{C\# .NET, Blazor, SQL Server, Azure AD}}{}
+          \resumeItemListStart
+            \resumeItem{Architecture technique modulaire et développement full stack pour la gestion multi-sites des certifications, utilisateurs et notifications}
+            \resumeItem{Rôles et habilitations, alertes planifiées, stockage automatique des documents}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Plateforme de gestion RH} $|$ \emph{ReactJS, NodeJS, JavaScript, JWT}}{}
+          \resumeItemListStart
+            \resumeItem{Conception et développement d'une application multi-modules (employés, congés, flotte, licences) pour plus de 50 utilisateurs}
+            \resumeItem{Automatisation OCR des factures réduisant le traitement manuel de 40\,\%}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Système de pointage biométrique} $|$ \emph{C\#, React, JavaScript, MongoDB}}{}
+          \resumeItemListStart
+            \resumeItem{Application full stack avec service C\# côté matériel, API et tableau de bord admin (export CSV/Excel)}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+\section{Langues}
+ \begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, parsep=0pt, topsep=2pt]
+    \small{\item{
+     Français (Courant) $\quad\bullet\quad$ Anglais (Professionnel) $\quad\bullet\quad$ Arabe (Langue maternelle)
+    }}
+ \end{itemize}
+
+\end{document}
